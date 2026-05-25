@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var message = `Dear Mr. Eric Barnes,
+        
+I am writing to you as a concerned citizen appalled by your decision as AIB, Head of Cyber
+Defence to align an Irish institution (previously bailed out by contributions from Irish tax
+payers like myself) with Snyk, a tech firm associated with genocide.
+
+Snyk was founded by three former members of the notorious Unit 8200 in the israeli
+occupying forces. Since 2025, what is being conducted by israel in Palestine has been
+confirmed as genocide. Further, israel’s longstanding record of occupation and apartheid
+should have given you pause when selecting AIB’s newest contractor. Knowing that not
+only are Snyk founders ex-soldiers of a nationalistic, supremacist, occupying army that is
+committing genocide, but that the Irish people have been campaigning for years to boycott,
+divest, and sanction the ethno-state of israel, it is unfathomable that nearly three years into
+this genocide you are close to signing contracts worth $1.2 million with such a company.
+
+In addition, it strikes me as monumentally stupid to give a terror-state potential back-door
+access to Irish customers personal information and data. We have repeatedly seen the
+israeli government operate outside the boundaries of contract law (Microsoft storage of
+illegally surveilled human data in Irish data centres / Google Amazon Project Nimbus
+coded messages to circumvent international courts). Further still, we have seen the former
+Director of the National Intelligence Agency of the State of israel, Yossi Cohen openly
+boast about their global sabotage networks.
+
+Partnering AIB with an israeli military founded firm with a base in Tel-Aviv, at a time when
+israel have acknowledged they’ve killed (a likely grossly underestimated) 75,811 men,
+women, and children in Palestine, are holding nearly 10,000 Palestinians including children
+in prisons without charge but with daily torture, have expanded their war crimes of
+occupation and ethnic cleansing into Lebanon, beaten, abused, and raped Flotilla crew
+members including Irish citizens is inexcusable. Your decision can only be interpreted as
+AIB directly supporting the genocide of the Palestinian people.
+
+I demand that you (i) reverse your decision to contract with Snyk and that (ii) you make a
+public statement about any other israeli associated firms AIB may be engaging with.
+
+Yours,
+`;
+
+        function normalizeString(str) {
+        // Define a mapping of special characters to their non-accented equivalents
+        const charMap = {
+            'à': 'a',
+            'á': 'a',
+            'ä': 'a',
+            'é': 'e',
+            'è': 'e',
+            'ê': 'e',
+            'ë': 'e',
+            'í': 'i',
+            'î': 'i',
+            'ï': 'i',
+            'ì': 'i',
+            'ó': 'o',
+            'ô': 'o',
+            'ö': 'o',
+            'ú': 'u',
+            'û': 'u',
+            'ü': 'u',
+            'ū': 'u',
+            'ç': 'c',
+            'À': 'A',
+            'Á': 'A',
+            'Ä': 'A',
+            'É': 'E',
+            'È': 'E',
+            'Ê': 'E',
+            'Ë': 'E',
+            'Í': 'I',
+            'Ì': 'I',
+            'Î': 'I',
+            'Ï': 'I',
+            'Ó': 'O',
+            'Ô': 'O',
+            'Ö': 'O',
+            'Ú': 'U',
+            'Û': 'U',
+            'Ü': 'U',
+            'Ū': 'U',
+            'Ç': 'C',
+            // Add more mappings as needed
+        };
+
+        // Use a regular expression to replace special characters
+        return str.replace(/[àáäéèêëíîìïóôöúûüūçÀÁÄÉÈÊËÍÌÎÏÓÔÖÚÛÜŪÇ]/g, match => charMap[match] || match);
+        }
+
+        function sendEmail() {
+            // Get the user's signature from the textarea
+            var signature = document.getElementById("signature").value;
+
+            signature = signature.replace(/ /g, " "); // Replace spaces with space characters
+
+            // Normalize the signature by replacing special characters with their non-accented equivalents
+            var normalizedSignature = normalizeString(signature);
+
+            // Encode the signature for use in the mailto link
+            var encodedSignature = encodeURIComponent(normalizedSignature).replace(/%20/g, " ");
+
+            // Create the mailto link
+            var mailtoLink = `mailto:eric.x.barnes@aib.ie;paddy.x.mcdonnell@aib.ie;hr.direct@aib.ie;careers@aib.ie?subject=Drop SYNK nowbody=${encodeURIComponent(message + encodedSignature)}`;
+            console.log(encodedSignature)
+
+            // Open the email client with the pre-filled email
+            window.location.href = mailtoLink;
+        }
+    </script>
+</head>
+<body>
+    <div style="clear:both;">
+        <p style="font-size:27pt;"><span style="font-family:Calibri;">We cannot allow deepening of Irelands complicity in the existence of the Apartheid Terrorist State of Israel.</span></p>
+          
+        </div>
+    <div style="clear:both;font-size: 15px;">
+    <p> Please read, share and send this email to AIB demanding they don't sign a contract with Israeli firm SYNK.
+        <br><br>
+    </p>
+        Saoirse don Phalastín. Tá ár Lá Anseo.
+    <br><br>
+    </p>
+    <p>Please sign your name and we will generate an email on your behalf. We will not normalise Israel.
+    <br><br>
+    </p>
+    <div><textarea id="signature" name="signature" placeholder="Type your signature here" style="width: 100%; height: 100px;"></textarea>
+    </div>
+    <input type="button" value="Generate Email" onclick="sendEmail()" style="font-size: 40px; width: 50%;"></div>
+    <div>
+        <!--<p class="normal0" style="line-height:100%; font-size:12pt;"><span style="font-family:Calibri;">&nbsp;</span></p>-->
+        </div>
+         </p>
+    <p> If you are having difficulty with the email generating, please find the text below and email it to info@icgp.ie and secretariateurope@wonca.net
+              </p>
+          Dear Mr. Eric Barnes,
+  </p>
+I am writing to you as a concerned citizen appalled by your decision as AIB, Head of Cyber Defence to align an Irish institution (previously bailed out by contributions from Irish tax payers like myself) with Snyk, a tech firm associated with genocide.
+  </p>
+Snyk was founded by three former members of the notorious Unit 8200 in the israeli occupying forces. Since 2025, what is being conducted by israel in Palestine has been confirmed as genocide. Further, israel’s longstanding record of occupation and apartheid should have given you pause when selecting AIB’s newest contractor. Knowing that not only are Snyk founders ex-soldiers of a nationalistic, supremacist, occupying army that is committing genocide, but that the Irish people have been campaigning for years to boycott, divest, and sanction the ethno-state of israel, it is unfathomable that nearly three years into this genocide you are close to signing contracts worth $1.2 million with such a company.  
+  </p> 
+    In addition, it strikes me as monumentally stupid to give a terror-state potential back-door access to Irish customers personal information and data. We have repeatedly seen the israeli government operate outside the boundaries of contract law (Microsoft storage of illegally surveilled human data in Irish data centres / Google Amazon Project Nimbus coded messages to circumvent international courts). Further still, we have seen the former Director of the National Intelligence Agency of the State of israel, Yossi Cohen openly boast about their global sabotage networks.  </p>
+  </p>
+Partnering AIB with an israeli military founded firm with a base in Tel-Aviv, at a time when israel have acknowledged they’ve killed (a likely grossly underestimated) 75,811 men, women, and children in Palestine, are holding nearly 10,000 Palestinians including children in prisons without charge but with daily torture, have expanded their war crimes of occupation and ethnic cleansing into Lebanon, beaten, abused, and raped Flotilla crew members including Irish citizens is inexcusable. Your decision can only be interpreted as AIB directly supporting the genocide of the Palestinian people.  </p>
+  </p>
+I demand that you (i) reverse your decision to contract with Snyk and that (ii) you make a public statement about any other israeli associated firms AIB may be engaging with.  </p>
+  </p>
+Yours,
+        <br><br>
+    </p>
+</body>
+</html>
